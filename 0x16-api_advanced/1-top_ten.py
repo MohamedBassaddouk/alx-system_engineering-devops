@@ -1,5 +1,7 @@
+#!/usr/bin/python3
 
-iy(functio of the first 10 hot posts listed for a given subreddit
+"""
+prints the titles of the first 10 hot posts listed for a given subreddit
 """
 
 from requests import get
@@ -28,14 +30,4 @@ def top_ten(subreddit):
             print(i.get('data').get('title'))
 
     except Exception:
-        print("None") () {
-	$("#add_item").click(function () {
-		$("<li>").text("Item").appendTo("ul.my_list");
-	});
-	$("#remove_item").click(function () {
-		$("ul.my_list li:last-child").remove();
-	});
-	$("#clear_list").click(function () {
-		$("ul.my_list").empty();
-	});
-});
+        print("None")
